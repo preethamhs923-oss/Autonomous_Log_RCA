@@ -1,0 +1,7 @@
+2026-08-24 10:30:15 | payment-service | ERROR | Database connection timeout | 192.168.1.10 | trace-001
+2026-08-24 10:31:20 | payment-service | INFO | Payment request received | 192.168.1.11 | trace-002
+2026-08-24 10:32:10 | inventory-service | WARNING | Product stock running low | 192.168.1.12 | trace-003
+2026-08-24 10:33:45 | payment-service | ERROR | Payment gateway unavailable | 192.168.1.13 | trace-004
+2026-08-24 10:34:30 | database-service | ERROR | Database connection timeout | 192.168.1.14 | trace-005
+2026-08-24 10:35:00 | inventory-service | INFO | Stock updated successfully | 192.168.1.15 | trace-006
+2026-08-24 10:36:12 | payment-service | ERROR | Database connection timeout | 192.168.1.16 | trace-007

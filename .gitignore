@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python test/cache
+.pytest_cache/
+.coverage
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Model/cache files
+*.pkl
+*.pickle
+*.joblib
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+# Generated RCA results
+ai_detection/output/
+rca_engine/*_results.json
+
+# Generated structured logs
+ingestion/output/
+
+# Generated Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
