@@ -7,7 +7,7 @@ const descriptions = {
   Anomalies: "Review events identified by the detection pipeline.",
   Services: "Review activity grouped by monitored service.",
   Incidents: "View incident records stored in PostgreSQL.",
-  "Root Cause": "Explore root-cause explanations and confidence values.",
+  "Root Cause": "Explore root-cause explanations, supporting evidence and recommendations.",
   "AI Intelligence": "Review AI analysis and code recommendations.",
   Security: "Review suspicious events and their severity.",
   Settings: "Local application and backend connection information.",
@@ -37,9 +37,17 @@ function extractRecords(payload, preferredKeys = []) {
 }
 
 function formatValue(value) {
-  if (value === null || value === undefined || value === "") return "—";
+  if (value === null || value === undefined || value === "") {
+    return "—";
+  }
 
-  if (typeof value === "object") return JSON.stringify(value);
+  if (Array.isArray(value)) {
+    return value.map(formatValue).join("; ");
+  }
+
+  if (typeof value === "object") {
+    return JSON.stringify(value);
+  }
 
   return String(value);
 }
@@ -56,6 +64,18 @@ function readNested(value) {
   return value && typeof value === "object" ? value : {};
 }
 
+function formatConfidence(value) {
+  if (value === null || value === undefined || value === "") {
+    return "—";
+  }
+
+  const number = Number(value);
+
+  if (!Number.isFinite(number)) return String(value);
+
+  return `${(number <= 1 ? number * 100 : number).toFixed(1)}%`;
+}
+
 function getIncidentValue(record, key) {
   const details = readNested(record.incident_data);
   const nestedIncident = readNested(details.incident);
@@ -63,33 +83,43 @@ function getIncidentValue(record, key) {
 
   const values = {
     incident_id:
-      record.incident_id ?? record.id ?? result.incident_id,
+      record.incident_id ??
+      record.id ??
+      result.incident_id,
+
     incident_key:
       record.incident_key ??
       details.incident_key ??
       nestedIncident.incident_key ??
       result.incident_key,
+
     service:
       record.service_name ??
       record.service ??
       details.service ??
       nestedIncident.service ??
       result.service,
+
     severity:
       record.severity ??
       details.severity ??
       nestedIncident.severity ??
       result.severity,
+
     event_count:
       record.event_count ??
       details.event_count ??
       nestedIncident.event_count ??
-      (Array.isArray(details.events) ? details.events.length : undefined),
+      (Array.isArray(details.events)
+        ? details.events.length
+        : undefined),
+
     first_seen:
       record.first_seen ??
       record.start_time ??
       details.first_seen ??
       details.start_time,
+
     last_seen:
       record.last_seen ??
       record.end_time ??
@@ -105,45 +135,79 @@ function getRootCauseValue(record, key) {
   const details = readNested(record.incident_data);
   const intelligence = readNested(details.intelligence);
 
+  const sources = [
+    record,
+    result,
+    intelligence,
+    details,
+  ];
+
+  const findValue = (...fields) => {
+    for (const source of sources) {
+      for (const field of fields) {
+        const value = source?.[field];
+
+        if (
+          value !== undefined &&
+          value !== null &&
+          value !== ""
+        ) {
+          return value;
+        }
+      }
+    }
+
+    return undefined;
+  };
+
   const values = {
-    incident_id:
-      record.incident_id ??
-      record.id ??
-      result.incident_id ??
-      intelligence.incident_id,
+    incident_id: findValue(
+      "incident_id",
+      "incident_key",
+      "id"
+    ),
 
-    root_cause:
-      record.root_cause ??
-      result.root_cause ??
-      intelligence.root_cause ??
-      details.root_cause,
+    service: findValue(
+      "service",
+      "service_name",
+      "affected_service"
+    ),
 
-    confidence:
-      record.confidence ??
-      result.confidence ??
-      intelligence.confidence ??
-      details.confidence,
+    root_cause: findValue(
+      "root_cause",
+      "root_cause_category",
+      "root_cause_type",
+      "category",
+      "probable_root_cause"
+    ),
 
-    explanation:
-      record.explanation ??
-      record.description ??
-      result.explanation ??
-      result.description ??
-      intelligence.recommended_action ??
-      intelligence.explanation ??
-      details.explanation,
+    confidence: findValue(
+      "confidence",
+      "confidence_score",
+      "confidence_value"
+    ),
+
+    evidence: findValue(
+      "evidence",
+      "supporting_evidence",
+      "evidence_summary"
+    ),
+
+    recommended_actions: findValue(
+      "recommended_actions",
+      "actions",
+      "recommendations",
+      "recommended_action"
+    ),
+
+    explanation: findValue(
+      "explanation",
+      "description",
+      "reason"
+    ),
   };
 
   return values[key];
-}
-
-function formatConfidence(value) {
-  if (value === null || value === undefined || value === "") return "—";
-
-  const number = Number(value);
-  if (!Number.isFinite(number)) return String(value);
-
-  return `${(number <= 1 ? number * 100 : number).toFixed(1)}%`;
 }
 
 function RecordsTable({
@@ -310,14 +374,22 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
 
     if (Array.isArray(moduleData)) return moduleData;
 
-    const code = extractRecords(moduleData.code_analysis_results ?? moduleData.code_analysis);
+    const code = extractRecords(
+      moduleData.code_analysis_results ??
+      moduleData.code_analysis
+    );
+
     const recommendations = extractRecords(
-      moduleData.refactoring_recommendations ?? moduleData.recommendations
+      moduleData.refactoring_recommendations ??
+      moduleData.recommendations
     );
 
     if (code.length || recommendations.length) {
       return [
-        ...code.map((item) => ({ ...item, result_type: "Code Analysis" })),
+        ...code.map((item) => ({
+          ...item,
+          result_type: "Code Analysis",
+        })),
         ...recommendations.map((item) => ({
           ...item,
           result_type: "Refactoring Recommendation",
@@ -325,7 +397,11 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
       ];
     }
 
-    return extractRecords(moduleData, ["records", "results", "data"]);
+    return extractRecords(moduleData, [
+      "records",
+      "results",
+      "data",
+    ]);
   }, [moduleData]);
 
   const filteredLogs = useMemo(() => {
@@ -366,7 +442,9 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
       <section className="dashboard">
         <h1>{page}</h1>
         <p role="alert">{error}</p>
-        <button onClick={() => window.location.reload()}>Retry</button>
+        <button onClick={() => window.location.reload()}>
+          Retry
+        </button>
       </section>
     );
   }
@@ -412,14 +490,20 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
         />
       ) : page === "Root Cause" ? (
         <RecordsTable
-          title="Root Cause Analysis"
+          title="Autonomous Root Cause Analysis"
           records={rootCauses}
           searchTerm={searchTerm}
           getValue={getRootCauseValue}
           columns={[
             { key: "incident_id", label: "Incident ID" },
+            { key: "service", label: "Affected Service" },
             { key: "root_cause", label: "Root Cause" },
             { key: "confidence", label: "Confidence" },
+            { key: "evidence", label: "Supporting Evidence" },
+            {
+              key: "recommended_actions",
+              label: "Recommended Actions",
+            },
             { key: "explanation", label: "Explanation" },
           ]}
         />
@@ -453,6 +537,7 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
                   <th>Anomalies</th>
                 </tr>
               </thead>
+
               <tbody>
                 {services.map((service) => (
                   <tr key={service.name}>
@@ -470,6 +555,7 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
           <div className="panel-header">
             <h2>Application Settings</h2>
           </div>
+
           <div className="module-details">
             <p><strong>Backend:</strong> Flask</p>
             <p><strong>Database:</strong> PostgreSQL</p>
@@ -504,6 +590,7 @@ function ModulePage({ page, searchTerm = "", refreshToken }) {
                   <th>Severity</th>
                 </tr>
               </thead>
+
               <tbody>
                 {filteredLogs.slice(-200).reverse().map((item, index) => (
                   <tr key={item.id ?? item.source_key ?? index}>

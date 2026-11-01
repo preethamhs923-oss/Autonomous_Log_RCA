@@ -20,3 +20,13 @@ export const getHealth = async () => {
 };
 
 export default api;
+// Fetch Root Cause Analysis results
+export const getRootCauses = async () => {
+  try {
+    const response = await api.get("/root-causes");
+    return response.data;
+  } catch (error) {
+    console.error("Failed to fetch root cause results:", error);
+    throw error;
+  }
+};
