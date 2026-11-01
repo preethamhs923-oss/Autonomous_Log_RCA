@@ -1,41 +1,48 @@
-function ServiceHealth({ services = [] }) {
+
+function ServiceHealth({ services = {} }) {
+  // Convert the backend object into an array for React
+  const serviceList = Array.isArray(services)
+    ? services
+    : Object.entries(services || {}).map(([service, details]) => ({
+        service,
+        ...details,
+      }));
+
   return (
     <div className="service-health-card">
-      <div className="section-header">
-        <div>
-          <h2>Service Health</h2>
-          <p>Real-time health status of monitored services</p>
-        </div>
-      </div>
-
       <div className="service-list">
-        {services.length === 0 ? (
+        {serviceList.length === 0 ? (
           <div className="empty-state">
             <p>No service data available</p>
             <span>Waiting for backend telemetry.</span>
           </div>
         ) : (
-          services.map((service, index) => {
-            const name =
-              typeof service === "string"
-                ? service
-                : service.service || service.name || `Service ${index + 1}`;
+          serviceList.map((service, index) => {
+            const rawName =
+              service.service || service.name || `Service ${index + 1}`;
 
-            const status =
-              typeof service === "string"
-                ? "HEALTHY"
-                : service.status || service.health || "HEALTHY";
+            const name = rawName
+              .replace(/-/g, " ")
+              .replace(/\b\w/g, (char) => char.toUpperCase());
 
+            const status = service.status || service.health || "HEALTHY";
             const normalizedStatus = String(status).toUpperCase();
 
+            const total = service.total ?? 0;
+            const anomalies = service.anomalies ?? 0;
+
             return (
-              <div className="service-row" key={name + index}>
+              <div className="service-row" key={rawName + index}>
                 <div className="service-info">
-                  <span className="service-indicator"></span>
+                  <span
+                    className={`service-indicator ${normalizedStatus.toLowerCase()}`}
+                  ></span>
 
                   <div className="service-details">
                     <strong>{name}</strong>
-                    <small>Monitored service</small>
+                    <small>
+                      {anomalies} anomalies / {total} total logs
+                    </small>
                   </div>
                 </div>
 

@@ -138,6 +138,7 @@ for index, row in df.iterrows():
 # ============================================================
 
 df["final_status"] = "NORMAL"
+
 # ============================================================
 # SEVERITY CLASSIFICATION
 # ============================================================
@@ -205,6 +206,33 @@ df.loc[
     (df["rule_anomaly"] == True),
     "final_status"
 ] = "ANOMALY"
+
+# ============================================================
+# FALSE POSITIVE INVESTIGATION
+# ============================================================
+
+successful_logs = df[
+    df["message"].str.contains(
+        "completed|successfully|successful",
+        case=False,
+        na=False
+    )
+]
+
+print("\n===== SUCCESSFUL MESSAGE CLASSIFICATION =====")
+
+print(
+    successful_logs[
+        [
+            "message",
+            "anomaly_score",
+            "status",
+            "rule_anomaly",
+            "rule_reasons",
+            "final_status"
+        ]
+    ].head(30).to_string(index=False)
+)
 # ============================================================
 # SEVERITY CLASSIFICATION
 # ============================================================

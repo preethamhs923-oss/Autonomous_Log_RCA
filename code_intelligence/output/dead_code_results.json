@@ -1,0 +1,42 @@
+[
+    {
+        "name": "health",
+        "kind": "function",
+        "file": "app\\api.py",
+        "line": 33,
+        "status": "POTENTIALLY_UNUSED",
+        "note": "No matching name reference was found in scanned Python files. Verify dynamic calls, framework usage, entry points, and external references before deciding this is dead code."
+    },
+    {
+        "name": "dashboard",
+        "kind": "function",
+        "file": "app\\api.py",
+        "line": 42,
+        "status": "POTENTIALLY_UNUSED",
+        "note": "No matching name reference was found in scanned Python files. Verify dynamic calls, framework usage, entry points, and external references before deciding this is dead code."
+    },
+    {
+        "name": "test_parse_log",
+        "kind": "function",
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "line": 4,
+        "status": "POTENTIALLY_UNUSED",
+        "note": "No matching name reference was found in scanned Python files. Verify dynamic calls, framework usage, entry points, and external references before deciding this is dead code."
+    },
+    {
+        "name": "test_parse_invalid_log",
+        "kind": "function",
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "line": 20,
+        "status": "POTENTIALLY_UNUSED",
+        "note": "No matching name reference was found in scanned Python files. Verify dynamic calls, framework usage, entry points, and external references before deciding this is dead code."
+    },
+    {
+        "name": "test_parse_multiple_logs",
+        "kind": "function",
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "line": 28,
+        "status": "POTENTIALLY_UNUSED",
+        "note": "No matching name reference was found in scanned Python files. Verify dynamic calls, framework usage, entry points, and external references before deciding this is dead code."
+    }
+]

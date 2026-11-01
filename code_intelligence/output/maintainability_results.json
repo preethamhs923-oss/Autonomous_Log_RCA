@@ -1,0 +1,1127 @@
+{
+    "files_scanned": 32,
+    "failed_files": 0,
+    "functions_analyzed": 87,
+    "risk_summary": {
+        "low": 63,
+        "medium": 16,
+        "high": 8
+    },
+    "functions": [
+        {
+            "name": "calculate_severity",
+            "file": "anomaly_detection.py",
+            "start_line": 145,
+            "end_line": 180,
+            "lines": 36,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 97.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "calculate_severity",
+            "file": "anomaly_detection.py",
+            "start_line": 212,
+            "end_line": 243,
+            "lines": 32,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 99.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_logs",
+            "file": "feature_engineering.py",
+            "start_line": 5,
+            "end_line": 9,
+            "lines": 5,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "create_features",
+            "file": "feature_engineering.py",
+            "start_line": 12,
+            "end_line": 284,
+            "lines": 273,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 0,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "run_module",
+            "file": "main.py",
+            "start_line": 10,
+            "end_line": 44,
+            "lines": 35,
+            "parameter_count": 3,
+            "max_nesting": 2,
+            "maintainability_score": 97.5,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "main",
+            "file": "main.py",
+            "start_line": 47,
+            "end_line": 141,
+            "lines": 95,
+            "parameter_count": 0,
+            "max_nesting": 1,
+            "maintainability_score": 67.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "apply_rules",
+            "file": "rule_engine.py",
+            "start_line": 1,
+            "end_line": 43,
+            "lines": 43,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 93.5,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "explain_anomaly",
+            "file": "ai_detection\\explainability.py",
+            "start_line": 5,
+            "end_line": 87,
+            "lines": 83,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 73.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "get_explanation",
+            "file": "ai_detection\\explainability.py",
+            "start_line": 94,
+            "end_line": 98,
+            "lines": 5,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "get_feature_contributions",
+            "file": "ai_detection\\feature_contribution.py",
+            "start_line": 5,
+            "end_line": 92,
+            "lines": 88,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 71.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "format_contributions",
+            "file": "ai_detection\\feature_contribution.py",
+            "start_line": 95,
+            "end_line": 102,
+            "lines": 8,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "predict_log",
+            "file": "ai_detection\\realtime_prediction.py",
+            "start_line": 64,
+            "end_line": 94,
+            "lines": 31,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 99.5,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_anomaly_data",
+            "file": "app\\api.py",
+            "start_line": 23,
+            "end_line": 29,
+            "lines": 7,
+            "parameter_count": 0,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "health",
+            "file": "app\\api.py",
+            "start_line": 33,
+            "end_line": 38,
+            "lines": 6,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "dashboard",
+            "file": "app\\api.py",
+            "start_line": 42,
+            "end_line": 106,
+            "lines": 65,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 82.5,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "parse_python_file",
+            "file": "code_intelligence\\ast_parser.py",
+            "start_line": 16,
+            "end_line": 76,
+            "lines": 61,
+            "parameter_count": 1,
+            "max_nesting": 6,
+            "maintainability_score": 64.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "scan_project",
+            "file": "code_intelligence\\ast_parser.py",
+            "start_line": 79,
+            "end_line": 90,
+            "lines": 12,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\ast_parser.py",
+            "start_line": 93,
+            "end_line": 115,
+            "lines": 23,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_json",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "start_line": 23,
+            "end_line": 34,
+            "lines": 12,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "summarize",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "start_line": 37,
+            "end_line": 65,
+            "lines": 29,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "start_line": 68,
+            "end_line": 126,
+            "lines": 59,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 85.5,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "calculate_complexity",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "start_line": 11,
+            "end_line": 31,
+            "lines": 21,
+            "parameter_count": 1,
+            "max_nesting": 7,
+            "maintainability_score": 75.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "analyze_file",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "start_line": 34,
+            "end_line": 65,
+            "lines": 32,
+            "parameter_count": 1,
+            "max_nesting": 4,
+            "maintainability_score": 89.0,
+            "risk": "LOW",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "start_line": 68,
+            "end_line": 111,
+            "lines": 44,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 93.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "scan_python_files",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "start_line": 19,
+            "end_line": 66,
+            "lines": 48,
+            "parameter_count": 0,
+            "max_nesting": 7,
+            "maintainability_score": 66.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "start_line": 69,
+            "end_line": 97,
+            "lines": 29,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "normalize_node",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "start_line": 21,
+            "end_line": 23,
+            "lines": 3,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "scan_for_duplicates",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "start_line": 26,
+            "end_line": 83,
+            "lines": 58,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 81.0,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "start_line": 86,
+            "end_line": 112,
+            "lines": 27,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 95.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "analyze_function",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "start_line": 20,
+            "end_line": 103,
+            "lines": 84,
+            "parameter_count": 2,
+            "max_nesting": 2,
+            "maintainability_score": 73.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "start_line": 106,
+            "end_line": 179,
+            "lines": 74,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 73.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "visit_nested",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "start_line": 40,
+            "end_line": 60,
+            "lines": 21,
+            "parameter_count": 2,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_json",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "start_line": 19,
+            "end_line": 31,
+            "lines": 13,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "find_records",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "start_line": 34,
+            "end_line": 48,
+            "lines": 15,
+            "parameter_count": 1,
+            "max_nesting": 3,
+            "maintainability_score": 95.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "recommend_from_record",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "start_line": 51,
+            "end_line": 105,
+            "lines": 55,
+            "parameter_count": 2,
+            "max_nesting": 4,
+            "maintainability_score": 77.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "start_line": 108,
+            "end_line": 153,
+            "lines": 46,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 87.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "tokenize_function",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "start_line": 30,
+            "end_line": 58,
+            "lines": 29,
+            "parameter_count": 1,
+            "max_nesting": 6,
+            "maintainability_score": 80.0,
+            "risk": "LOW",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "extract_functions",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "start_line": 61,
+            "end_line": 128,
+            "lines": 68,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 76.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "similarity",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "start_line": 131,
+            "end_line": 165,
+            "lines": 35,
+            "parameter_count": 2,
+            "max_nesting": 1,
+            "maintainability_score": 97.5,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "start_line": 168,
+            "end_line": 254,
+            "lines": 87,
+            "parameter_count": 0,
+            "max_nesting": 2,
+            "maintainability_score": 71.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "load_json",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "start_line": 14,
+            "end_line": 25,
+            "lines": 12,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "get_functions",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "start_line": 28,
+            "end_line": 38,
+            "lines": 11,
+            "parameter_count": 1,
+            "max_nesting": 3,
+            "maintainability_score": 95.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "classify_debt",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "start_line": 41,
+            "end_line": 56,
+            "lines": 16,
+            "parameter_count": 2,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "estimate_effort",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "start_line": 59,
+            "end_line": 71,
+            "lines": 13,
+            "parameter_count": 2,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "main",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "start_line": 74,
+            "end_line": 203,
+            "lines": 130,
+            "parameter_count": 0,
+            "max_nesting": 5,
+            "maintainability_score": 35.0,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "load_logs",
+            "file": "rca_engine\\event_correlation.py",
+            "start_line": 5,
+            "end_line": 9,
+            "lines": 5,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_timestamp",
+            "file": "rca_engine\\event_correlation.py",
+            "start_line": 12,
+            "end_line": 18,
+            "lines": 7,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "calculate_correlation",
+            "file": "rca_engine\\event_correlation.py",
+            "start_line": 21,
+            "end_line": 138,
+            "lines": 118,
+            "parameter_count": 3,
+            "max_nesting": 3,
+            "maintainability_score": 51.0,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "correlate_events",
+            "file": "rca_engine\\event_correlation.py",
+            "start_line": 141,
+            "end_line": 172,
+            "lines": 32,
+            "parameter_count": 3,
+            "max_nesting": 2,
+            "maintainability_score": 99.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_logs",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 9,
+            "end_line": 17,
+            "lines": 9,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_timestamp",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 24,
+            "end_line": 29,
+            "lines": 6,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "get_pattern",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 36,
+            "end_line": 100,
+            "lines": 65,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 82.5,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "are_related",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 107,
+            "end_line": 202,
+            "lines": 96,
+            "parameter_count": 2,
+            "max_nesting": 2,
+            "maintainability_score": 67.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "cluster_incidents",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 209,
+            "end_line": 256,
+            "lines": 48,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 91.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "build_incident_results",
+            "file": "rca_engine\\incident_clustering.py",
+            "start_line": 263,
+            "end_line": 356,
+            "lines": 94,
+            "parameter_count": 1,
+            "max_nesting": 3,
+            "maintainability_score": 63.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "load_json",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 45,
+            "end_line": 52,
+            "lines": 8,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "get_incident_anomalies",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 83,
+            "end_line": 96,
+            "lines": 14,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "calculate_severity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 103,
+            "end_line": 131,
+            "lines": 29,
+            "parameter_count": 3,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "generate_summary",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 138,
+            "end_line": 209,
+            "lines": 72,
+            "parameter_count": 3,
+            "max_nesting": 1,
+            "maintainability_score": 79.0,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "generate_recommendation",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 216,
+            "end_line": 256,
+            "lines": 41,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 94.5,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "build_intelligence",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 263,
+            "end_line": 397,
+            "lines": 135,
+            "parameter_count": 0,
+            "max_nesting": 3,
+            "maintainability_score": 42.5,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "save_results",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 404,
+            "end_line": 424,
+            "lines": 21,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "display_results",
+            "file": "rca_engine\\incident_intelligence.py",
+            "start_line": 431,
+            "end_line": 497,
+            "lines": 67,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 81.5,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "load_anomaly_results",
+            "file": "rca_engine\\log_loader.py",
+            "start_line": 4,
+            "end_line": 8,
+            "lines": 5,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "get_anomalies",
+            "file": "rca_engine\\log_loader.py",
+            "start_line": 11,
+            "end_line": 18,
+            "lines": 8,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "load_logs",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 9,
+            "end_line": 13,
+            "lines": 5,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_timestamp",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 20,
+            "end_line": 26,
+            "lines": 7,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "message_contains",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 33,
+            "end_line": 43,
+            "lines": 11,
+            "parameter_count": 2,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "detect_log_pattern",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 50,
+            "end_line": 191,
+            "lines": 142,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 44.0,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "detect_incident_pattern",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 198,
+            "end_line": 251,
+            "lines": 54,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 88.0,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "build_incident_windows",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 258,
+            "end_line": 316,
+            "lines": 59,
+            "parameter_count": 2,
+            "max_nesting": 3,
+            "maintainability_score": 80.5,
+            "risk": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "analyze_incidents",
+            "file": "rca_engine\\pattern_detector.py",
+            "start_line": 323,
+            "end_line": 393,
+            "lines": 71,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 79.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "load_incidents",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 9,
+            "end_line": 17,
+            "lines": 9,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_timestamp",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 24,
+            "end_line": 29,
+            "lines": 6,
+            "parameter_count": 1,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "classify_candidate",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 36,
+            "end_line": 172,
+            "lines": 137,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 46.5,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "score_candidate",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 179,
+            "end_line": 372,
+            "lines": 194,
+            "parameter_count": 3,
+            "max_nesting": 4,
+            "maintainability_score": 8.0,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels"
+            ]
+        },
+        {
+            "name": "analyze_incident",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 379,
+            "end_line": 521,
+            "lines": 143,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 43.5,
+            "risk": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "analyze_all_incidents",
+            "file": "rca_engine\\root_cause_engine.py",
+            "start_line": 528,
+            "end_line": 612,
+            "lines": 85,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 72.5,
+            "risk": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ]
+        },
+        {
+            "name": "collect_logs",
+            "file": "ingestion\\collectors\\log_collector.py",
+            "start_line": 4,
+            "end_line": 23,
+            "lines": 20,
+            "parameter_count": 1,
+            "max_nesting": 3,
+            "maintainability_score": 95.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_log",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "start_line": 5,
+            "end_line": 26,
+            "lines": 22,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "parse_logs",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "start_line": 29,
+            "end_line": 42,
+            "lines": 14,
+            "parameter_count": 1,
+            "max_nesting": 2,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "save_structured_logs",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "start_line": 45,
+            "end_line": 55,
+            "lines": 11,
+            "parameter_count": 2,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "create_producer",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "start_line": 5,
+            "end_line": 11,
+            "lines": 7,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "send_logs_to_kafka",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "start_line": 14,
+            "end_line": 24,
+            "lines": 11,
+            "parameter_count": 1,
+            "max_nesting": 1,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "test_parse_log",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "start_line": 4,
+            "end_line": 17,
+            "lines": 14,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "test_parse_invalid_log",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "start_line": 20,
+            "end_line": 25,
+            "lines": 6,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        },
+        {
+            "name": "test_parse_multiple_logs",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "start_line": 28,
+            "end_line": 38,
+            "lines": 11,
+            "parameter_count": 0,
+            "max_nesting": 0,
+            "maintainability_score": 100.0,
+            "risk": "LOW",
+            "issues": []
+        }
+    ],
+    "methodology": "Heuristic score based on function length, parameter count, and nesting depth. It is not a formal maintainability index."
+}

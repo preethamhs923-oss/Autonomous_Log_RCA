@@ -1,0 +1,1971 @@
+{
+    "analyzers_loaded": 5,
+    "recommendation_count": 245,
+    "priority_summary": {
+        "HIGH": 3,
+        "MEDIUM": 242,
+        "LOW": 0
+    },
+    "recommendations": [
+        {
+            "source": "technical_debt",
+            "file": "feature_engineering.py",
+            "function": "create_features",
+            "priority": "HIGH",
+            "finding": "['long function: more than 50 lines']     create_features   critical  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "score_candidate",
+            "priority": "HIGH",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels', 'high cyclomatic complexity: 15']     score_candidate   critical  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "main",
+            "priority": "HIGH",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels', 'moderate cyclomatic complexity: 12']     main   critical  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "complexity",
+            "file": "anomaly_detection.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "     calculate_severity  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "anomaly_detection.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "     calculate_severity  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "feature_engineering.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "     load_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "feature_engineering.py",
+            "function": "create_features",
+            "priority": "MEDIUM",
+            "finding": "     create_features  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "main.py",
+            "function": "run_module",
+            "priority": "MEDIUM",
+            "finding": "     run_module  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "main.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rule_engine.py",
+            "function": "apply_rules",
+            "priority": "MEDIUM",
+            "finding": "     apply_rules  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ai_detection\\explainability.py",
+            "function": "explain_anomaly",
+            "priority": "MEDIUM",
+            "finding": "     explain_anomaly  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ai_detection\\explainability.py",
+            "function": "get_explanation",
+            "priority": "MEDIUM",
+            "finding": "     get_explanation  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "get_feature_contributions",
+            "priority": "MEDIUM",
+            "finding": "     get_feature_contributions  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "format_contributions",
+            "priority": "MEDIUM",
+            "finding": "     format_contributions  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ai_detection\\realtime_prediction.py",
+            "function": "predict_log",
+            "priority": "MEDIUM",
+            "finding": "     predict_log  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "app\\api.py",
+            "function": "load_anomaly_data",
+            "priority": "MEDIUM",
+            "finding": "     load_anomaly_data  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "app\\api.py",
+            "function": "health",
+            "priority": "MEDIUM",
+            "finding": "     health  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "app\\api.py",
+            "function": "dashboard",
+            "priority": "MEDIUM",
+            "finding": "     dashboard  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "parse_python_file",
+            "priority": "MEDIUM",
+            "finding": "     parse_python_file  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "scan_project",
+            "priority": "MEDIUM",
+            "finding": "     scan_project  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "     load_json  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "summarize",
+            "priority": "MEDIUM",
+            "finding": "     summarize  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "calculate_complexity",
+            "priority": "MEDIUM",
+            "finding": "     calculate_complexity  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "analyze_file",
+            "priority": "MEDIUM",
+            "finding": "     analyze_file  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "scan_python_files",
+            "priority": "MEDIUM",
+            "finding": "     scan_python_files  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "normalize_node",
+            "priority": "MEDIUM",
+            "finding": "     normalize_node  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "scan_for_duplicates",
+            "priority": "MEDIUM",
+            "finding": "     scan_for_duplicates  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "analyze_function",
+            "priority": "MEDIUM",
+            "finding": "     analyze_function  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "visit_nested",
+            "priority": "MEDIUM",
+            "finding": "     visit_nested  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "     load_json  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "find_records",
+            "priority": "MEDIUM",
+            "finding": "     find_records  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "recommend_from_record",
+            "priority": "MEDIUM",
+            "finding": "     recommend_from_record  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "tokenize_function",
+            "priority": "MEDIUM",
+            "finding": "     tokenize_function  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "extract_functions",
+            "priority": "MEDIUM",
+            "finding": "     extract_functions  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "similarity",
+            "priority": "MEDIUM",
+            "finding": "     similarity  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "     load_json  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "get_functions",
+            "priority": "MEDIUM",
+            "finding": "     get_functions  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "classify_debt",
+            "priority": "MEDIUM",
+            "finding": "     classify_debt  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "estimate_effort",
+            "priority": "MEDIUM",
+            "finding": "     estimate_effort  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "     main  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "     load_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "     parse_timestamp  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "calculate_correlation",
+            "priority": "MEDIUM",
+            "finding": "     calculate_correlation  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "correlate_events",
+            "priority": "MEDIUM",
+            "finding": "     correlate_events  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "     load_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "     parse_timestamp  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "get_pattern",
+            "priority": "MEDIUM",
+            "finding": "     get_pattern  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "are_related",
+            "priority": "MEDIUM",
+            "finding": "     are_related  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "cluster_incidents",
+            "priority": "MEDIUM",
+            "finding": "     cluster_incidents  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "build_incident_results",
+            "priority": "MEDIUM",
+            "finding": "     build_incident_results  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "     load_json  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "get_incident_anomalies",
+            "priority": "MEDIUM",
+            "finding": "     get_incident_anomalies  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "     calculate_severity  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_summary",
+            "priority": "MEDIUM",
+            "finding": "     generate_summary  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_recommendation",
+            "priority": "MEDIUM",
+            "finding": "     generate_recommendation  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "build_intelligence",
+            "priority": "MEDIUM",
+            "finding": "     build_intelligence  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "save_results",
+            "priority": "MEDIUM",
+            "finding": "     save_results  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "display_results",
+            "priority": "MEDIUM",
+            "finding": "     display_results  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\log_loader.py",
+            "function": "load_anomaly_results",
+            "priority": "MEDIUM",
+            "finding": "     load_anomaly_results  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\log_loader.py",
+            "function": "get_anomalies",
+            "priority": "MEDIUM",
+            "finding": "     get_anomalies  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "     load_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "     parse_timestamp  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "message_contains",
+            "priority": "MEDIUM",
+            "finding": "     message_contains  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_log_pattern",
+            "priority": "MEDIUM",
+            "finding": "     detect_log_pattern  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_incident_pattern",
+            "priority": "MEDIUM",
+            "finding": "     detect_incident_pattern  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "build_incident_windows",
+            "priority": "MEDIUM",
+            "finding": "     build_incident_windows  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "analyze_incidents",
+            "priority": "MEDIUM",
+            "finding": "     analyze_incidents  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "load_incidents",
+            "priority": "MEDIUM",
+            "finding": "     load_incidents  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "     parse_timestamp  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "classify_candidate",
+            "priority": "MEDIUM",
+            "finding": "     classify_candidate  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "score_candidate",
+            "priority": "MEDIUM",
+            "finding": "     score_candidate  high   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_incident",
+            "priority": "MEDIUM",
+            "finding": "     analyze_incident  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_all_incidents",
+            "priority": "MEDIUM",
+            "finding": "     analyze_all_incidents  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\collectors\\log_collector.py",
+            "function": "collect_logs",
+            "priority": "MEDIUM",
+            "finding": "     collect_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "parse_log",
+            "priority": "MEDIUM",
+            "finding": "     parse_log  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "parse_logs",
+            "priority": "MEDIUM",
+            "finding": "     parse_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "save_structured_logs",
+            "priority": "MEDIUM",
+            "finding": "     save_structured_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "function": "create_producer",
+            "priority": "MEDIUM",
+            "finding": "     create_producer  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "function": "send_logs_to_kafka",
+            "priority": "MEDIUM",
+            "finding": "     send_logs_to_kafka  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_log",
+            "priority": "MEDIUM",
+            "finding": "     test_parse_log  medium   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_invalid_log",
+            "priority": "MEDIUM",
+            "finding": "     test_parse_invalid_log  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "complexity",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_multiple_logs",
+            "priority": "MEDIUM",
+            "finding": "     test_parse_multiple_logs  low   ",
+            "recommendation": "Review control flow and simplify complex functions."
+        },
+        {
+            "source": "maintainability",
+            "file": "anomaly_detection.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "[]    calculate_severity   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "anomaly_detection.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "[]    calculate_severity   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "feature_engineering.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    load_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "feature_engineering.py",
+            "function": "create_features",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    create_features   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "main.py",
+            "function": "run_module",
+            "priority": "MEDIUM",
+            "finding": "[]    run_module   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "main.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    main   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rule_engine.py",
+            "function": "apply_rules",
+            "priority": "MEDIUM",
+            "finding": "[]    apply_rules   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ai_detection\\explainability.py",
+            "function": "explain_anomaly",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    explain_anomaly   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ai_detection\\explainability.py",
+            "function": "get_explanation",
+            "priority": "MEDIUM",
+            "finding": "[]    get_explanation   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "get_feature_contributions",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    get_feature_contributions   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "format_contributions",
+            "priority": "MEDIUM",
+            "finding": "[]    format_contributions   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ai_detection\\realtime_prediction.py",
+            "function": "predict_log",
+            "priority": "MEDIUM",
+            "finding": "[]    predict_log   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "app\\api.py",
+            "function": "load_anomaly_data",
+            "priority": "MEDIUM",
+            "finding": "[]    load_anomaly_data   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "app\\api.py",
+            "function": "health",
+            "priority": "MEDIUM",
+            "finding": "[]    health   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "app\\api.py",
+            "function": "dashboard",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    dashboard   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "parse_python_file",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels']    parse_python_file   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "scan_project",
+            "priority": "MEDIUM",
+            "finding": "[]    scan_project   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "[]    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "[]    load_json   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "summarize",
+            "priority": "MEDIUM",
+            "finding": "[]    summarize   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "calculate_complexity",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']    calculate_complexity   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "analyze_file",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']    analyze_file   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "[]    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "scan_python_files",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']    scan_python_files   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "[]    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "normalize_node",
+            "priority": "MEDIUM",
+            "finding": "[]    normalize_node   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "scan_for_duplicates",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    scan_for_duplicates   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "[]    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "analyze_function",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    analyze_function   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    main   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "visit_nested",
+            "priority": "MEDIUM",
+            "finding": "[]    visit_nested   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "[]    load_json   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "find_records",
+            "priority": "MEDIUM",
+            "finding": "[]    find_records   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "recommend_from_record",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels']    recommend_from_record   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "[]    main   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "tokenize_function",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']    tokenize_function   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "extract_functions",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    extract_functions   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "similarity",
+            "priority": "MEDIUM",
+            "finding": "[]    similarity   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    main   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "[]    load_json   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "get_functions",
+            "priority": "MEDIUM",
+            "finding": "[]    get_functions   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "classify_debt",
+            "priority": "MEDIUM",
+            "finding": "[]    classify_debt   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "estimate_effort",
+            "priority": "MEDIUM",
+            "finding": "[]    estimate_effort   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels']    main   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    load_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_timestamp   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "calculate_correlation",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    calculate_correlation   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "correlate_events",
+            "priority": "MEDIUM",
+            "finding": "[]    correlate_events   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    load_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_timestamp   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "get_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    get_pattern   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "are_related",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    are_related   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "cluster_incidents",
+            "priority": "MEDIUM",
+            "finding": "[]    cluster_incidents   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "build_incident_results",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    build_incident_results   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "load_json",
+            "priority": "MEDIUM",
+            "finding": "[]    load_json   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "get_incident_anomalies",
+            "priority": "MEDIUM",
+            "finding": "[]    get_incident_anomalies   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "calculate_severity",
+            "priority": "MEDIUM",
+            "finding": "[]    calculate_severity   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_summary",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    generate_summary   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_recommendation",
+            "priority": "MEDIUM",
+            "finding": "[]    generate_recommendation   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "build_intelligence",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    build_intelligence   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "save_results",
+            "priority": "MEDIUM",
+            "finding": "[]    save_results   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "display_results",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    display_results   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\log_loader.py",
+            "function": "load_anomaly_results",
+            "priority": "MEDIUM",
+            "finding": "[]    load_anomaly_results   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\log_loader.py",
+            "function": "get_anomalies",
+            "priority": "MEDIUM",
+            "finding": "[]    get_anomalies   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "load_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    load_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_timestamp   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "message_contains",
+            "priority": "MEDIUM",
+            "finding": "[]    message_contains   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_log_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    detect_log_pattern   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_incident_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    detect_incident_pattern   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "build_incident_windows",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    build_incident_windows   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "analyze_incidents",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    analyze_incidents   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "load_incidents",
+            "priority": "MEDIUM",
+            "finding": "[]    load_incidents   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "parse_timestamp",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_timestamp   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "classify_candidate",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    classify_candidate   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "score_candidate",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels']    score_candidate   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_incident",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    analyze_incident   high   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_all_incidents",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']    analyze_all_incidents   medium   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\collectors\\log_collector.py",
+            "function": "collect_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    collect_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "parse_log",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_log   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "parse_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    parse_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\parsers\\log_parser.py",
+            "function": "save_structured_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    save_structured_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "function": "create_producer",
+            "priority": "MEDIUM",
+            "finding": "[]    create_producer   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\producers\\kafka_producer.py",
+            "function": "send_logs_to_kafka",
+            "priority": "MEDIUM",
+            "finding": "[]    send_logs_to_kafka   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_log",
+            "priority": "MEDIUM",
+            "finding": "[]    test_parse_log   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_invalid_log",
+            "priority": "MEDIUM",
+            "finding": "[]    test_parse_invalid_log   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "maintainability",
+            "file": "ingestion\\tests\\test_log_parser.py",
+            "function": "test_parse_multiple_logs",
+            "priority": "MEDIUM",
+            "finding": "[]    test_parse_multiple_logs   low   ",
+            "recommendation": "Improve readability, reduce nesting, and split long functions where appropriate."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "build_intelligence",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     build_intelligence   high  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_incident",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     analyze_incident   high  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_log_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'moderate cyclomatic complexity: 10']     detect_log_pattern   high  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "classify_candidate",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     classify_candidate   high  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\event_correlation.py",
+            "function": "calculate_correlation",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'high cyclomatic complexity: 16']     calculate_correlation   high  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "build_incident_results",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     build_incident_results   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "parse_python_file",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels', 'moderate cyclomatic complexity: 10']     parse_python_file   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "scan_python_files",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels', 'moderate cyclomatic complexity: 13']     scan_python_files   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "are_related",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'moderate cyclomatic complexity: 13']     are_related   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "main.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     main   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "get_feature_contributions",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     get_feature_contributions   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     main   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_all_incidents",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     analyze_all_incidents   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "analyze_function",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'moderate cyclomatic complexity: 11']     analyze_function   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     main   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "ai_detection\\explainability.py",
+            "function": "explain_anomaly",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'high cyclomatic complexity: 22']     explain_anomaly   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "calculate_complexity",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']     calculate_complexity   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "extract_functions",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'moderate cyclomatic complexity: 12']     extract_functions   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "recommend_from_record",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines', 'deep nesting: more than 3 levels', 'high cyclomatic complexity: 15']     recommend_from_record   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_summary",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     generate_summary   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "analyze_incidents",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     analyze_incidents   medium  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "tokenize_function",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']     tokenize_function   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "build_incident_windows",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     build_incident_windows   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "scan_for_duplicates",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     scan_for_duplicates   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "display_results",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     display_results   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "app\\api.py",
+            "function": "dashboard",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     dashboard   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "get_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     get_pattern   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "main",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     main   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_incident_pattern",
+            "priority": "MEDIUM",
+            "finding": "['long function: more than 50 lines']     detect_incident_pattern   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "analyze_file",
+            "priority": "MEDIUM",
+            "finding": "['deep nesting: more than 3 levels']     analyze_file   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "technical_debt",
+            "file": "rule_engine.py",
+            "function": "apply_rules",
+            "priority": "MEDIUM",
+            "finding": "['moderate cyclomatic complexity: 10']     apply_rules   low  ",
+            "recommendation": "Review the debt finding and prioritize a safe, tested fix."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          high_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        },
+        {
+            "source": "semantic",
+            "file": "Unknown file",
+            "function": "Review finding",
+            "priority": "MEDIUM",
+            "finding": "          potential_similarity",
+            "recommendation": "Compare the functions manually before considering shared implementation."
+        }
+    ]
+}

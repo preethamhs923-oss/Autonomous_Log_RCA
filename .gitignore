@@ -1,57 +1,38 @@
 # Python
 __pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environment
+*.pyc
 .venv/
 venv/
-env/
 
-# Environment variables / secrets
+# Node
+node_modules/
+frontend/node_modules/
+
+# Environment
 .env
 .env.*
-!.env.example
 
-# VS Code
-.vscode/
-*.code-workspace
+# Frontend build
+dist/
+frontend/dist/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Python test/cache
-.pytest_cache/
-.coverage
+# Local backup
+app_old/
 
 # Logs
 *.log
 
-# Temporary files
-*.tmp
-*.temp
-
-# Model/cache files
-*.pkl
-*.pickle
-*.joblib
-
-# Local database files
-*.db
-*.sqlite
-*.sqlite3
-# Generated RCA results
+# IDE
+.vscode/
+.idea/
+*.sql
+# Generated ML artifacts and outputs
+ai_detection/models/
 ai_detection/output/
-rca_engine/*_results.json
-
-# Generated structured logs
 ingestion/output/
-
-# Generated Python cache
 __pycache__/
-**/__pycache__/
-*.pyc
+
+# Local database backups
+*_backup.sql
+*backup*.sql
+anomaly_tables_backup.sql

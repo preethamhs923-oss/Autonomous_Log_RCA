@@ -1,0 +1,611 @@
+[
+    {
+        "file": "anomaly_detection.py",
+        "function": "calculate_severity",
+        "line": 145,
+        "complexity": 10,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "anomaly_detection.py",
+        "function": "calculate_severity",
+        "line": 212,
+        "complexity": 9,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "feature_engineering.py",
+        "function": "load_logs",
+        "line": 5,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "feature_engineering.py",
+        "function": "create_features",
+        "line": 12,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "main.py",
+        "function": "run_module",
+        "line": 10,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "main.py",
+        "function": "main",
+        "line": 47,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "rule_engine.py",
+        "function": "apply_rules",
+        "line": 1,
+        "complexity": 10,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "ai_detection\\explainability.py",
+        "function": "explain_anomaly",
+        "line": 5,
+        "complexity": 22,
+        "risk": "HIGH"
+    },
+    {
+        "file": "ai_detection\\explainability.py",
+        "function": "get_explanation",
+        "line": 94,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "ai_detection\\feature_contribution.py",
+        "function": "get_feature_contributions",
+        "line": 5,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ai_detection\\feature_contribution.py",
+        "function": "format_contributions",
+        "line": 95,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ai_detection\\realtime_prediction.py",
+        "function": "predict_log",
+        "line": 64,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "app\\api.py",
+        "function": "load_anomaly_data",
+        "line": 23,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "app\\api.py",
+        "function": "health",
+        "line": 33,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "app\\api.py",
+        "function": "dashboard",
+        "line": 42,
+        "complexity": 9,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\ast_parser.py",
+        "function": "parse_python_file",
+        "line": 16,
+        "complexity": 10,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\ast_parser.py",
+        "function": "scan_project",
+        "line": 79,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\ast_parser.py",
+        "function": "main",
+        "line": 93,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\code_intelligence_report.py",
+        "function": "load_json",
+        "line": 23,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\code_intelligence_report.py",
+        "function": "summarize",
+        "line": 37,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\code_intelligence_report.py",
+        "function": "main",
+        "line": 68,
+        "complexity": 9,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\complexity_analyzer.py",
+        "function": "calculate_complexity",
+        "line": 11,
+        "complexity": 8,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\complexity_analyzer.py",
+        "function": "analyze_file",
+        "line": 34,
+        "complexity": 6,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\complexity_analyzer.py",
+        "function": "main",
+        "line": 68,
+        "complexity": 6,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\dead_code_detector.py",
+        "function": "scan_python_files",
+        "line": 19,
+        "complexity": 13,
+        "risk": "HIGH"
+    },
+    {
+        "file": "code_intelligence\\dead_code_detector.py",
+        "function": "main",
+        "line": 69,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\duplicate_logic_detector.py",
+        "function": "normalize_node",
+        "line": 21,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\duplicate_logic_detector.py",
+        "function": "scan_for_duplicates",
+        "line": 26,
+        "complexity": 9,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\duplicate_logic_detector.py",
+        "function": "main",
+        "line": 86,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\maintainability_analyzer.py",
+        "function": "analyze_function",
+        "line": 20,
+        "complexity": 11,
+        "risk": "HIGH"
+    },
+    {
+        "file": "code_intelligence\\maintainability_analyzer.py",
+        "function": "main",
+        "line": 106,
+        "complexity": 8,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\maintainability_analyzer.py",
+        "function": "visit_nested",
+        "line": 40,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\refactoring_recommender.py",
+        "function": "load_json",
+        "line": 19,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\refactoring_recommender.py",
+        "function": "find_records",
+        "line": 34,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\refactoring_recommender.py",
+        "function": "recommend_from_record",
+        "line": 51,
+        "complexity": 15,
+        "risk": "HIGH"
+    },
+    {
+        "file": "code_intelligence\\refactoring_recommender.py",
+        "function": "main",
+        "line": 108,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\semantic_analyzer.py",
+        "function": "tokenize_function",
+        "line": 30,
+        "complexity": 7,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\semantic_analyzer.py",
+        "function": "extract_functions",
+        "line": 61,
+        "complexity": 12,
+        "risk": "HIGH"
+    },
+    {
+        "file": "code_intelligence\\semantic_analyzer.py",
+        "function": "similarity",
+        "line": 131,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\semantic_analyzer.py",
+        "function": "main",
+        "line": 168,
+        "complexity": 6,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "function": "load_json",
+        "line": 14,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "function": "get_functions",
+        "line": 28,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "function": "classify_debt",
+        "line": 41,
+        "complexity": 7,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "function": "estimate_effort",
+        "line": 59,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "function": "main",
+        "line": 74,
+        "complexity": 12,
+        "risk": "HIGH"
+    },
+    {
+        "file": "rca_engine\\event_correlation.py",
+        "function": "load_logs",
+        "line": 5,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\event_correlation.py",
+        "function": "parse_timestamp",
+        "line": 12,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\event_correlation.py",
+        "function": "calculate_correlation",
+        "line": 21,
+        "complexity": 16,
+        "risk": "HIGH"
+    },
+    {
+        "file": "rca_engine\\event_correlation.py",
+        "function": "correlate_events",
+        "line": 141,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "load_logs",
+        "line": 9,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "parse_timestamp",
+        "line": 24,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "get_pattern",
+        "line": 36,
+        "complexity": 6,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "are_related",
+        "line": 107,
+        "complexity": 13,
+        "risk": "HIGH"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "cluster_incidents",
+        "line": 209,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "function": "build_incident_results",
+        "line": 263,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "load_json",
+        "line": 45,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "get_incident_anomalies",
+        "line": 83,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "calculate_severity",
+        "line": 103,
+        "complexity": 8,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "generate_summary",
+        "line": 138,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "generate_recommendation",
+        "line": 216,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "build_intelligence",
+        "line": 263,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "save_results",
+        "line": 404,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "function": "display_results",
+        "line": 431,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\log_loader.py",
+        "function": "load_anomaly_results",
+        "line": 4,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\log_loader.py",
+        "function": "get_anomalies",
+        "line": 11,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "load_logs",
+        "line": 9,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "parse_timestamp",
+        "line": 20,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "message_contains",
+        "line": 33,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "detect_log_pattern",
+        "line": 50,
+        "complexity": 10,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "detect_incident_pattern",
+        "line": 198,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "build_incident_windows",
+        "line": 258,
+        "complexity": 5,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "function": "analyze_incidents",
+        "line": 323,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "load_incidents",
+        "line": 9,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "parse_timestamp",
+        "line": 24,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "classify_candidate",
+        "line": 36,
+        "complexity": 8,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "score_candidate",
+        "line": 179,
+        "complexity": 15,
+        "risk": "HIGH"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "analyze_incident",
+        "line": 379,
+        "complexity": 6,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "function": "analyze_all_incidents",
+        "line": 528,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\collectors\\log_collector.py",
+        "function": "collect_logs",
+        "line": 4,
+        "complexity": 4,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\parsers\\log_parser.py",
+        "function": "parse_log",
+        "line": 5,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\parsers\\log_parser.py",
+        "function": "parse_logs",
+        "line": 29,
+        "complexity": 3,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\parsers\\log_parser.py",
+        "function": "save_structured_logs",
+        "line": 45,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\producers\\kafka_producer.py",
+        "function": "create_producer",
+        "line": 5,
+        "complexity": 1,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\producers\\kafka_producer.py",
+        "function": "send_logs_to_kafka",
+        "line": 14,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "function": "test_parse_log",
+        "line": 4,
+        "complexity": 7,
+        "risk": "MEDIUM"
+    },
+    {
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "function": "test_parse_invalid_log",
+        "line": 20,
+        "complexity": 2,
+        "risk": "LOW"
+    },
+    {
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "function": "test_parse_multiple_logs",
+        "line": 28,
+        "complexity": 4,
+        "risk": "LOW"
+    }
+]

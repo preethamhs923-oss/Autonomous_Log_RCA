@@ -1,0 +1,980 @@
+[
+    {
+        "file": "anomaly_detection.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "calculate_severity",
+                "line": 145,
+                "end_line": 180,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "calculate_severity",
+                "line": 212,
+                "end_line": 243,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ai_detection.explainability",
+            "ai_detection.feature_contribution",
+            "feature_engineering",
+            "json",
+            "os",
+            "rule_engine",
+            "sklearn.ensemble",
+            "sklearn.metrics"
+        ]
+    },
+    {
+        "file": "feature_engineering.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_logs",
+                "line": 5,
+                "end_line": 9,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "create_features",
+                "line": 12,
+                "end_line": 284,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "json",
+            "pandas"
+        ]
+    },
+    {
+        "file": "main.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "run_module",
+                "line": 10,
+                "end_line": 44,
+                "arguments": 3,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 47,
+                "end_line": 141,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "pathlib",
+            "subprocess",
+            "sys"
+        ]
+    },
+    {
+        "file": "preprocessing.py",
+        "status": "success",
+        "functions": [],
+        "classes": [],
+        "imports": []
+    },
+    {
+        "file": "root_cause.py",
+        "status": "success",
+        "functions": [],
+        "classes": [],
+        "imports": []
+    },
+    {
+        "file": "rule_engine.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "apply_rules",
+                "line": 1,
+                "end_line": 43,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": []
+    },
+    {
+        "file": "ai_detection\\explainability.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "explain_anomaly",
+                "line": 5,
+                "end_line": 87,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "get_explanation",
+                "line": 94,
+                "end_line": 98,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": []
+    },
+    {
+        "file": "ai_detection\\feature_contribution.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "get_feature_contributions",
+                "line": 5,
+                "end_line": 92,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "format_contributions",
+                "line": 95,
+                "end_line": 102,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": []
+    },
+    {
+        "file": "ai_detection\\model_comparison.py",
+        "status": "success",
+        "functions": [],
+        "classes": [],
+        "imports": [
+            "feature_engineering",
+            "os",
+            "pandas",
+            "sklearn.ensemble",
+            "sklearn.metrics",
+            "sklearn.neighbors",
+            "sys"
+        ]
+    },
+    {
+        "file": "ai_detection\\model_save_load.py",
+        "status": "success",
+        "functions": [],
+        "classes": [],
+        "imports": [
+            "feature_engineering",
+            "joblib",
+            "os",
+            "sklearn.ensemble",
+            "sys"
+        ]
+    },
+    {
+        "file": "ai_detection\\realtime_prediction.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "predict_log",
+                "line": 64,
+                "end_line": 94,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "feature_engineering",
+            "joblib",
+            "os",
+            "pandas",
+            "sys"
+        ]
+    },
+    {
+        "file": "app\\api.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_anomaly_data",
+                "line": 23,
+                "end_line": 29,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "health",
+                "line": 33,
+                "end_line": 38,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "dashboard",
+                "line": 42,
+                "end_line": 106,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "flask",
+            "flask_cors",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\ast_parser.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "parse_python_file",
+                "line": 16,
+                "end_line": 76,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "scan_project",
+                "line": 79,
+                "end_line": 90,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 93,
+                "end_line": 115,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\code_intelligence_report.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_json",
+                "line": 23,
+                "end_line": 34,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "summarize",
+                "line": 37,
+                "end_line": 65,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 68,
+                "end_line": 126,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\complexity_analyzer.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "calculate_complexity",
+                "line": 11,
+                "end_line": 31,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "analyze_file",
+                "line": 34,
+                "end_line": 65,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 68,
+                "end_line": 111,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\dead_code_detector.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "scan_python_files",
+                "line": 19,
+                "end_line": 66,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 69,
+                "end_line": 97,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\duplicate_logic_detector.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "normalize_node",
+                "line": 21,
+                "end_line": 23,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "scan_for_duplicates",
+                "line": 26,
+                "end_line": 83,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 86,
+                "end_line": 112,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "collections",
+            "hashlib",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\maintainability_analyzer.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "analyze_function",
+                "line": 20,
+                "end_line": 103,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 106,
+                "end_line": 179,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "visit_nested",
+                "line": 40,
+                "end_line": 60,
+                "arguments": 2,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "json",
+            "math",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\refactoring_recommender.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_json",
+                "line": 19,
+                "end_line": 31,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "find_records",
+                "line": 34,
+                "end_line": 48,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "recommend_from_record",
+                "line": 51,
+                "end_line": 105,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 108,
+                "end_line": 153,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "code_intelligence\\semantic_analyzer.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "tokenize_function",
+                "line": 30,
+                "end_line": 58,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "extract_functions",
+                "line": 61,
+                "end_line": 128,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "similarity",
+                "line": 131,
+                "end_line": 165,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 168,
+                "end_line": 254,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ast",
+            "collections",
+            "difflib",
+            "io",
+            "itertools",
+            "json",
+            "pathlib",
+            "re",
+            "tokenize"
+        ]
+    },
+    {
+        "file": "code_intelligence\\technical_debt_analyzer.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_json",
+                "line": 14,
+                "end_line": 25,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "get_functions",
+                "line": 28,
+                "end_line": 38,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "classify_debt",
+                "line": 41,
+                "end_line": 56,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "estimate_effort",
+                "line": 59,
+                "end_line": 71,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "main",
+                "line": 74,
+                "end_line": 203,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "collections",
+            "json",
+            "pathlib"
+        ]
+    },
+    {
+        "file": "rca_engine\\event_correlation.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_logs",
+                "line": 5,
+                "end_line": 9,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "parse_timestamp",
+                "line": 12,
+                "end_line": 18,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "calculate_correlation",
+                "line": 21,
+                "end_line": 138,
+                "arguments": 3,
+                "is_async": false
+            },
+            {
+                "name": "correlate_events",
+                "line": 141,
+                "end_line": 172,
+                "arguments": 3,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json"
+        ]
+    },
+    {
+        "file": "rca_engine\\incident_clustering.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_logs",
+                "line": 9,
+                "end_line": 17,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "parse_timestamp",
+                "line": 24,
+                "end_line": 29,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "get_pattern",
+                "line": 36,
+                "end_line": 100,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "are_related",
+                "line": 107,
+                "end_line": 202,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "cluster_incidents",
+                "line": 209,
+                "end_line": 256,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "build_incident_results",
+                "line": 263,
+                "end_line": 356,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json"
+        ]
+    },
+    {
+        "file": "rca_engine\\incident_intelligence.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_json",
+                "line": 45,
+                "end_line": 52,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "get_incident_anomalies",
+                "line": 83,
+                "end_line": 96,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "calculate_severity",
+                "line": 103,
+                "end_line": 131,
+                "arguments": 3,
+                "is_async": false
+            },
+            {
+                "name": "generate_summary",
+                "line": 138,
+                "end_line": 209,
+                "arguments": 3,
+                "is_async": false
+            },
+            {
+                "name": "generate_recommendation",
+                "line": 216,
+                "end_line": 256,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "build_intelligence",
+                "line": 263,
+                "end_line": 397,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "save_results",
+                "line": 404,
+                "end_line": 424,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "display_results",
+                "line": 431,
+                "end_line": 497,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "collections",
+            "json",
+            "os"
+        ]
+    },
+    {
+        "file": "rca_engine\\log_loader.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_anomaly_results",
+                "line": 4,
+                "end_line": 8,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "get_anomalies",
+                "line": 11,
+                "end_line": 18,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "json"
+        ]
+    },
+    {
+        "file": "rca_engine\\pattern_detector.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_logs",
+                "line": 9,
+                "end_line": 13,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "parse_timestamp",
+                "line": 20,
+                "end_line": 26,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "message_contains",
+                "line": 33,
+                "end_line": 43,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "detect_log_pattern",
+                "line": 50,
+                "end_line": 191,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "detect_incident_pattern",
+                "line": 198,
+                "end_line": 251,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "build_incident_windows",
+                "line": 258,
+                "end_line": 316,
+                "arguments": 2,
+                "is_async": false
+            },
+            {
+                "name": "analyze_incidents",
+                "line": 323,
+                "end_line": 393,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json"
+        ]
+    },
+    {
+        "file": "rca_engine\\root_cause_engine.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "load_incidents",
+                "line": 9,
+                "end_line": 17,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "parse_timestamp",
+                "line": 24,
+                "end_line": 29,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "classify_candidate",
+                "line": 36,
+                "end_line": 172,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "score_candidate",
+                "line": 179,
+                "end_line": 372,
+                "arguments": 3,
+                "is_async": false
+            },
+            {
+                "name": "analyze_incident",
+                "line": 379,
+                "end_line": 521,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "analyze_all_incidents",
+                "line": 528,
+                "end_line": 612,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json"
+        ]
+    },
+    {
+        "file": "ingestion\\collectors\\log_collector.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "collect_logs",
+                "line": 4,
+                "end_line": 23,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "os"
+        ]
+    },
+    {
+        "file": "ingestion\\parsers\\log_parser.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "parse_log",
+                "line": 5,
+                "end_line": 26,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "parse_logs",
+                "line": 29,
+                "end_line": 42,
+                "arguments": 1,
+                "is_async": false
+            },
+            {
+                "name": "save_structured_logs",
+                "line": 45,
+                "end_line": 55,
+                "arguments": 2,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "json",
+            "os"
+        ]
+    },
+    {
+        "file": "ingestion\\producers\\kafka_producer.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "create_producer",
+                "line": 5,
+                "end_line": 11,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "send_logs_to_kafka",
+                "line": 14,
+                "end_line": 24,
+                "arguments": 1,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "json",
+            "kafka"
+        ]
+    },
+    {
+        "file": "ingestion\\tests\\test_log_parser.py",
+        "status": "success",
+        "functions": [
+            {
+                "name": "test_parse_log",
+                "line": 4,
+                "end_line": 17,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "test_parse_invalid_log",
+                "line": 20,
+                "end_line": 25,
+                "arguments": 0,
+                "is_async": false
+            },
+            {
+                "name": "test_parse_multiple_logs",
+                "line": 28,
+                "end_line": 38,
+                "arguments": 0,
+                "is_async": false
+            }
+        ],
+        "classes": [],
+        "imports": [
+            "ingestion.parsers.log_parser"
+        ]
+    },
+    {
+        "file": "ai_detection\\data\\generate_dataset.py",
+        "status": "success",
+        "functions": [],
+        "classes": [],
+        "imports": [
+            "datetime",
+            "json",
+            "os",
+            "random"
+        ]
+    }
+]

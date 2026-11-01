@@ -1,0 +1,439 @@
+{
+    "functions_reviewed": 87,
+    "complexity_functions_loaded": 87,
+    "technical_debt_items": 34,
+    "priority_summary": {
+        "CRITICAL": 3,
+        "HIGH": 5,
+        "MEDIUM": 16,
+        "LOW": 10
+    },
+    "estimated_total_remediation_minutes": 1515,
+    "estimated_total_remediation_hours": 25.25,
+    "estimation_note": "Effort estimates are rough planning heuristics, not measured repair times.",
+    "items": [
+        {
+            "file": "feature_engineering.py",
+            "function": "create_features",
+            "start_line": 12,
+            "maintainability_score": 0,
+            "priority": "CRITICAL",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 120,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "score_candidate",
+            "start_line": 179,
+            "maintainability_score": 8.0,
+            "priority": "CRITICAL",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels",
+                "High cyclomatic complexity: 15"
+            ],
+            "estimated_remediation_minutes": 150,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\technical_debt_analyzer.py",
+            "function": "main",
+            "start_line": 74,
+            "maintainability_score": 35.0,
+            "priority": "CRITICAL",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels",
+                "Moderate cyclomatic complexity: 12"
+            ],
+            "estimated_remediation_minutes": 150,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "build_intelligence",
+            "start_line": 263,
+            "maintainability_score": 42.5,
+            "priority": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 60,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_incident",
+            "start_line": 379,
+            "maintainability_score": 43.5,
+            "priority": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 60,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_log_pattern",
+            "start_line": 50,
+            "maintainability_score": 44.0,
+            "priority": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Moderate cyclomatic complexity: 10"
+            ],
+            "estimated_remediation_minutes": 75,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "classify_candidate",
+            "start_line": 36,
+            "maintainability_score": 46.5,
+            "priority": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 60,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\event_correlation.py",
+            "function": "calculate_correlation",
+            "start_line": 21,
+            "maintainability_score": 51.0,
+            "priority": "HIGH",
+            "issues": [
+                "Long function: more than 50 lines",
+                "High cyclomatic complexity: 16"
+            ],
+            "estimated_remediation_minutes": 75,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "build_incident_results",
+            "start_line": 263,
+            "maintainability_score": 63.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\ast_parser.py",
+            "function": "parse_python_file",
+            "start_line": 16,
+            "maintainability_score": 64.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels",
+                "Moderate cyclomatic complexity: 10"
+            ],
+            "estimated_remediation_minutes": 60,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\dead_code_detector.py",
+            "function": "scan_python_files",
+            "start_line": 19,
+            "maintainability_score": 66.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Deep nesting: more than 3 levels",
+                "Moderate cyclomatic complexity: 13"
+            ],
+            "estimated_remediation_minutes": 45,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "are_related",
+            "start_line": 107,
+            "maintainability_score": 67.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Moderate cyclomatic complexity: 13"
+            ],
+            "estimated_remediation_minutes": 45,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "main.py",
+            "function": "main",
+            "start_line": 47,
+            "maintainability_score": 67.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "ai_detection\\feature_contribution.py",
+            "function": "get_feature_contributions",
+            "start_line": 5,
+            "maintainability_score": 71.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "main",
+            "start_line": 168,
+            "maintainability_score": 71.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\root_cause_engine.py",
+            "function": "analyze_all_incidents",
+            "start_line": 528,
+            "maintainability_score": 72.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "analyze_function",
+            "start_line": 20,
+            "maintainability_score": 73.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Moderate cyclomatic complexity: 11"
+            ],
+            "estimated_remediation_minutes": 45,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\maintainability_analyzer.py",
+            "function": "main",
+            "start_line": 106,
+            "maintainability_score": 73.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "ai_detection\\explainability.py",
+            "function": "explain_anomaly",
+            "start_line": 5,
+            "maintainability_score": 73.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "High cyclomatic complexity: 22"
+            ],
+            "estimated_remediation_minutes": 45,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "calculate_complexity",
+            "start_line": 11,
+            "maintainability_score": 75.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "extract_functions",
+            "start_line": 61,
+            "maintainability_score": 76.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Moderate cyclomatic complexity: 12"
+            ],
+            "estimated_remediation_minutes": 45,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\refactoring_recommender.py",
+            "function": "recommend_from_record",
+            "start_line": 51,
+            "maintainability_score": 77.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines",
+                "Deep nesting: more than 3 levels",
+                "High cyclomatic complexity: 15"
+            ],
+            "estimated_remediation_minutes": 60,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "generate_summary",
+            "start_line": 138,
+            "maintainability_score": 79.0,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "analyze_incidents",
+            "start_line": 323,
+            "maintainability_score": 79.5,
+            "priority": "MEDIUM",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 30,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\semantic_analyzer.py",
+            "function": "tokenize_function",
+            "start_line": 30,
+            "maintainability_score": 80.0,
+            "priority": "LOW",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "build_incident_windows",
+            "start_line": 258,
+            "maintainability_score": 80.5,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\duplicate_logic_detector.py",
+            "function": "scan_for_duplicates",
+            "start_line": 26,
+            "maintainability_score": 81.0,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_intelligence.py",
+            "function": "display_results",
+            "start_line": 431,
+            "maintainability_score": 81.5,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "app\\api.py",
+            "function": "dashboard",
+            "start_line": 42,
+            "maintainability_score": 82.5,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\incident_clustering.py",
+            "function": "get_pattern",
+            "start_line": 36,
+            "maintainability_score": 82.5,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\code_intelligence_report.py",
+            "function": "main",
+            "start_line": 68,
+            "maintainability_score": 85.5,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rca_engine\\pattern_detector.py",
+            "function": "detect_incident_pattern",
+            "start_line": 198,
+            "maintainability_score": 88.0,
+            "priority": "LOW",
+            "issues": [
+                "Long function: more than 50 lines"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "code_intelligence\\complexity_analyzer.py",
+            "function": "analyze_file",
+            "start_line": 34,
+            "maintainability_score": 89.0,
+            "priority": "LOW",
+            "issues": [
+                "Deep nesting: more than 3 levels"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        },
+        {
+            "file": "rule_engine.py",
+            "function": "apply_rules",
+            "start_line": 1,
+            "maintainability_score": 93.5,
+            "priority": "LOW",
+            "issues": [
+                "Moderate cyclomatic complexity: 10"
+            ],
+            "estimated_remediation_minutes": 15,
+            "recommendation": "Review the findings, add tests, and consider small, behavior-preserving refactoring."
+        }
+    ]
+}

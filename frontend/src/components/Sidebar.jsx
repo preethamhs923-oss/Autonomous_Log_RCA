@@ -1,3 +1,4 @@
+
 import {
   LayoutDashboard,
   Activity,
@@ -11,66 +12,36 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-function Sidebar() {
+function Sidebar({ activePage, onNavigate }) {
   const menuItems = [
     {
       section: "MONITORING",
       items: [
-        {
-          name: "Dashboard",
-          icon: LayoutDashboard,
-          active: true,
-        },
-        {
-          name: "Log Analytics",
-          icon: Activity,
-        },
-        {
-          name: "Anomalies",
-          icon: AlertTriangle,
-        },
-        {
-          name: "Services",
-          icon: Server,
-        },
+        { name: "Dashboard", icon: LayoutDashboard },
+        { name: "Log Analytics", icon: Activity },
+        { name: "Anomalies", icon: AlertTriangle },
+        { name: "Services", icon: Server },
       ],
     },
     {
       section: "INTELLIGENCE",
       items: [
-        {
-          name: "Incidents",
-          icon: Network,
-        },
-        {
-          name: "Root Cause",
-          icon: Search,
-        },
-        {
-          name: "AI Intelligence",
-          icon: Brain,
-        },
+        { name: "Incidents", icon: Network },
+        { name: "Root Cause", icon: Search },
+        { name: "AI Intelligence", icon: Brain },
       ],
     },
     {
       section: "SYSTEM",
       items: [
-        {
-          name: "Security",
-          icon: ShieldCheck,
-        },
-        {
-          name: "Settings",
-          icon: Settings,
-        },
+        { name: "Security", icon: ShieldCheck },
+        { name: "Settings", icon: Settings },
       ],
     },
   ];
 
   return (
     <aside className="sidebar">
-
-      {/* Logo */}
       <div className="sidebar-logo">
         <div className="logo-mark">
           <Brain size={22} />
@@ -82,58 +53,47 @@ function Sidebar() {
         </div>
       </div>
 
-      {/* System Status */}
       <div className="system-status">
-        <span className="status-indicator"></span>
-
+        <span className="status-indicator" />
         <div>
           <span className="status-label">SYSTEM STATUS</span>
           <strong>Operational</strong>
         </div>
       </div>
 
-      {/* Navigation */}
       <nav className="sidebar-nav">
-
         {menuItems.map((section) => (
           <div className="nav-section" key={section.section}>
-
             <div className="nav-section-title">
               {section.section}
             </div>
 
             {section.items.map((item) => {
               const Icon = item.icon;
+              const isActive = activePage === item.name;
 
               return (
                 <button
-                  className={`nav-item ${
-                    item.active ? "active" : ""
-                  }`}
+                  type="button"
+                  className={`nav-item ${isActive ? "active" : ""}`}
                   key={item.name}
+                  onClick={() => onNavigate(item.name)}
+                  aria-current={isActive ? "page" : undefined}
                 >
                   <Icon size={18} />
-
                   <span>{item.name}</span>
 
-                  {item.active && (
-                    <ChevronRight
-                      size={15}
-                      className="nav-arrow"
-                    />
+                  {isActive && (
+                    <ChevronRight size={15} className="nav-arrow" />
                   )}
                 </button>
               );
             })}
-
           </div>
         ))}
-
       </nav>
 
-      {/* Bottom System Information */}
       <div className="sidebar-footer">
-
         <div className="pipeline-info">
           <span>PIPELINE</span>
           <strong>v1.0.0</strong>
@@ -143,9 +103,7 @@ function Sidebar() {
           <span>ENVIRONMENT</span>
           <strong>LOCAL</strong>
         </div>
-
       </div>
-
     </aside>
   );
 }
